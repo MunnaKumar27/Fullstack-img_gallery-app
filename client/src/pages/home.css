@@ -1,0 +1,69 @@
+/* Gallery Image Styling */
+.gallery-img {
+    width: 500px;         /* Fixed width for all images */
+    height: 333px;        /* Fixed height for all images */
+    object-fit: cover;    /* Ensures images cover the container while maintaining their aspect ratio */
+    border-radius: 10px;  /* Optional: Adds rounded corners to the images */
+    transition: transform 0.3s ease-in-out; /* Smooth zoom effect on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow around the image */
+  }
+  
+  /* Hover effect */
+  .gallery-img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    cursor: pointer;  /* Change cursor to pointer on hover */
+  }
+  
+  /* Container for the image */
+  .img-container {
+    position: relative;
+    overflow: hidden; /* Prevents the image from overflowing the container */
+    border-radius: 10px; /* Rounded corners for the container */
+    width: 500px;  /* Fixed width for the image container */
+    height: 333px; /* Fixed height for each image container */
+    margin-bottom: 20px; /* Space between images */
+  }
+  
+  /* Download Button Styling */
+  .download-btn {
+    position: relative;
+    padding: 10px;
+    font-size: 14px;
+    background-color: #28a745; /* Green background for download button */
+    color: white;  /* White text */
+    border-radius: 5px;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+    text-align: center; /* Center the text */
+  }
+  
+  /* Make the download button the same width as the image */
+  .download-btn.w-100 {
+    width: 100%;  /* Make the button span the full width of its container (same as the image) */
+    margin-top: 10px; /* Space between the image and the button */
+  }
+  
+  .download-btn:hover {
+    opacity: 1; /* Button becomes fully opaque on hover */
+    cursor: pointer;  /* Change cursor to pointer on hover */
+  }
+  
+  /* Grid Layout for Images */
+  .row {
+    display: flex;
+    flex-wrap: wrap;  /* Allow images to wrap on smaller screens */
+    justify-content: space-between; /* Space out images */
+  }
+  
+  .col-lg-4, .col-md-6, .col-sm-12 {
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative; /* Needed for button positioning */
+    margin-bottom: 20px; /* Spacing between grid items */
+  }
+  
+  /* Optional: Add some spacing between the grid items */
+  .mb-4 {
+    margin-bottom: 20px;
+  }
+  
