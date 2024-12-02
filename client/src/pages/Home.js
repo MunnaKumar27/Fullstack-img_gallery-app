@@ -66,7 +66,7 @@ const Home = () => {
 
                   {/* Download Button */}
                   <a
-                    href={`http://localhost:8000/${item.name}`} // Image source
+                    href={`https://img-gallery-backend.onrender.com${item.name}`} // Image source
                     download={item.name} // Triggers download
                     className="btn btn-success download-btn w-100 mt-3"
                     aria-label="Download"
