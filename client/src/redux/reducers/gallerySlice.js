@@ -8,7 +8,7 @@ const initialValues = {
 export const getAllImages = createAsyncThunk(
   "images/fetchallimages",
   async () => {
-    const res = await axios.get("http://localhost:8000/api/v1/get/images");
+    const res = await axios.get("https://img-gallery-backend.onrender.com/api/v1/get/images");
     return res.data;
   }
 );
