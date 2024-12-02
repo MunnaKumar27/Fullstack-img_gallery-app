@@ -59,14 +59,14 @@ const Home = () => {
                 <div className="img-container">
                   {/* Image */}
                   <img
-                    src={`http://localhost:8000/${item.name}`}
+                    src={`https://img-gallery-backend.onrender.com/${item.name}`}
                     className="img-fluid img-thumbnail gallery-img"
                     alt={item.name}
                   />
 
                   {/* Download Button */}
                   <a
-                    href={`https://img-gallery-backend.onrender.com${item.name}`} // Image source
+                    href={`https://img-gallery-backend.onrender.com/${item.name}`} // Image source
                     download={item.name} // Triggers download
                     className="btn btn-success download-btn w-100 mt-3"
                     aria-label="Download"
